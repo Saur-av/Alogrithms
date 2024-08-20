@@ -6,7 +6,7 @@ def insersionSort(arr : list):
     print("Initial Array: \n",arr)
 
     for i in range(1 , len(arr)):
-        # print(i,arr)
+        # print(i,arr)``
 
         for j in range(i,0 ,-1):
             if arr[j] >= arr[j - 1]:
