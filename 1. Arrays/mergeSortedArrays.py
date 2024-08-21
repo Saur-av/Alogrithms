@@ -10,8 +10,8 @@ Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 class Solution:
     def merge(self, nums1: list[int], m: int, nums2: list[int], n: int) -> None:
         '''
-        Time Complexity : O(m + n)
-        Space Complexty : O(m)'''
+        Time Complexity : Linear | O(m + n)
+        Space Complexty : Linear | O(m)'''
         temp = nums1[:m]
         i = 0
         j = 0
@@ -33,3 +33,12 @@ class Solution:
         # if nums2 still has items then
         if (j < n):
             nums1[cur:] = nums2[j:]
+
+def test(nums1,nums2):
+    print("num1 =",nums1)
+    print("num2 =",nums2)
+    Solution.merge(1,nums1,len(nums1) - len(nums2),nums2,len(nums2))
+    print("Merged Sorted Array =",nums1)
+
+test([1,2,3,0,0,0],[2,5,6])
+test([],[1])
