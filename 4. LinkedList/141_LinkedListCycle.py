@@ -14,6 +14,9 @@ Return true if there is a cycle in the linked list. Otherwise, return false.'''
 
 class Solution:
     def hasCycle(self, head) -> bool:
+        '''
+        Time Complexity : Linear | O(n)
+        Space Complexity : Constant | O(1)'''
         fast = head
         
         while fast and fast.next:
