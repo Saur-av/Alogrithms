@@ -16,7 +16,7 @@ class Solution:
     def hasCycle(self, head) -> bool:
         '''
         Time Complexity : Linear | O(n)
-        Space Complexity : Constant | O(1)'''
+        Space Complexity : Linear | O(N)'''
         fast = head
         
         while fast and fast.next:

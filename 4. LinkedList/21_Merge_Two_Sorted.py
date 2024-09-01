@@ -17,7 +17,7 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         '''
         Time Complexity : Linear | O(n)
-        Space Complexity : Constant | O(1)'''
+        Space Complexity : Linear | O(N)'''
 
         dummy = ListNode()
         cur = dummy
