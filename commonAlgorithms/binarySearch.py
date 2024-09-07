@@ -1,6 +1,4 @@
-
-
-def search(self, nums: list[int], target: int) -> int:
+def search(nums: list[int], target: int) -> int:
     '''
     Time Complexity : Logarithmic | O(log(n))
     Space Complexity : Constant | O(1)'''
